@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+h1{
+    background-color: aqua;
+    color: brown;
+}
+
+.jumbo {
+    background-color: yellow;
+    border: 1px solid green;
+    padding : 60px;
+}

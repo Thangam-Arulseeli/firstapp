@@ -1,0 +1,36 @@
+
+<div class='jumbo' [ngClass]="dynamicBackground">
+
+  <h1> Home... Home... Home...</h1>
+
+  <p> {{message}} </p>
+  
+  {{(10*100) +10+20 }}
+
+<h2>{{  getResponse()  }} </h2>
+
+
+<h1> Product : {{product}} </h1>
+
+
+<h1 *ngFor="let product of products">   {{product.name}} , {{product.brand}} </h1>
+
+<button (click)="updateProduct()" [disabled]="enabled"> Update Product</button>  &nbsp; &nbsp; &nbsp; &nbsp;
+
+<input type="text" name="userName" id="userName" [value]="product" /> &nbsp; &nbsp; &nbsp; &nbsp;
+
+<button type="button" id="btnTest" (click)="enableButton()"> Dynamic Binding Test </button> <br>
+
+First Name  : <input type="text" name="name1" id="name1" [value]="fname" />  <br>
+Last Name :<input type="text" name="name2" id="name2" [value]="lname" /> <br>
+Age : <input type="text" name="age1" id="age1" [value]="age" /> <br>
+
+<button type="button" id="btn" (click)="checkUser()"> User Name </button>
+<input type="text" name="name3" id="name3" [value]="fullname" /> &nbsp; &nbsp; &nbsp; &nbsp;
+
+{{fullname}}
+
+<button type="button" id="btnR" (click)="showRed()"> Red </button>
+<button type="button" id="btnG" (click)="showGreen()"> Green </button>
+
+</div>
